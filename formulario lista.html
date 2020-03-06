@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+</head>
+<body style="background-color:#BCB161">
+<center><h1 style="background-color:white;color:#BCB161;">AGREGAR SOCIO</h1></center>
+	<center>
+	<form action="conexion.php" method="POST">
+		<label for="fname" >Nombre:</label><br><br>
+			<input type="text" id="fname" name="nombre" placeholder="           Nombre"><br><br>
+		<label for="fname" >Nombre:</label><br><br>
+			<input type="text" id="fname" name="apellidopaterno" placeholder="     Apellido Paterno"><br><br>
+		<label for="fname" >Nombre:</label><br><br>
+			<input type="text" id="fname" name="apellidomaterno" placeholder="     Apellido Materno"><br><br>
+	        <label for="femail">Correo electronico:</label><br><br>
+		<input type="email" id="femail" name="email" placeholder="email@email.com"><br><br>
+		<label for="ftel">Telefono:</label><br><br>
+		<input type="number" id="ftel" name="telefono" placeholder="     449 977 7845"><br><br>
+
+		<label for="fnaci">Fecha de Nacimiento: </label> <br><br>
+			<input type="date" id="fnaci" name="fechanacimiento"><br><br>
+
+		<label for="fciud">Lugar de Nacimiento:</label><br><br>
+		<select name="lugarnacimiento">
+			<option>Aguascalientes</option>
+			<option>Baja California </option>
+			<option>Baja California Sur </option>
+			<option>Campeche </option>
+			<option>Chiapas </option>
+			<option>Chihuahua </option>
+			<option>Coahuila </option>
+			<option>Colima </option>
+			<option>Distrito Federal</option>
+			<option>Durango </option>
+			<option>Estado de México </option>
+			<option>Guanajuato </option>
+			<option>Guerrero </option>
+			<option>Hidalgo </option>
+			<option>Jalisco </option>
+			<option>Michoacán </option>
+			<option>Morelos </option>
+			<option>Nayarit </option>
+			<option>Nuevo León </option>
+			<option>Oaxaca </option>
+			<option>Puebla </option>
+			<option>Querétaro </option>
+			<option>Quintana Roo </option>
+			<option>San Luis Potosí </option>
+			<option>Sinaloa </option>
+			<option>Sonora </option>
+			<option>Tabasco </option>
+			<option>Tamaulipas </option>
+			<option>Tlaxcala </option>
+			<option>Veracruz </option>
+			<option>Yucatán </option>
+			<option>Zacatecas</option>
+		</select>
+		<br><br>
+
+		<label for="fdirec">Direccion:</label><br><br>
+        <input type="text" id="fdirec" name="direccion"><br><br>
+
+        <label for="fcodigo">Codigo Postal:</label><br><br>
+        <input type="phone" id="fcodigo" name="codigopostal"><br><br>
+
+		<label for="fname">Estado Civil:</label><br><br>
+		<label>
+        	<input type="radio" name="estado_civil" value="soltero"> Soltero
+        </label>
+        <label>
+            <input type="radio" name="estado_civil" value="casado"> Casado
+        </label>
+        <br><br>
+
+	<input type="submit" value="Enviar" name="button" height="250" width="200" style="background-color:white;color:#BCB161;">
+    <input type="reset" value="Cancelar" name="button" height="250" width="200" style="background-color:white; color:#BCB161;">
+	</form>
+	</center>
+</body>
+</html>

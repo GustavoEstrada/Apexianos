@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Forulario</title>
+</head>
+
+
+<body style="background-color:#BCB161">
+        <center>
+            <h1 style="color:white">
+                Formulario
+            </h1>
+        </center>
+        <h2 style="color:white"> Datos Personales </h2>
+
+            <hr style="color:black"/>
+
+    <br>
+    <!--Accion de conecta con la Base de Datos -->
+    <form action="conexion.php" method="POST">
+        <!--Label de nombre con su campo tipo texto -->
+    <center>
+        <label align=right for="nombre">Nombre:</label>
+           <input type="text" id="fname" name="nombre" placeholder="       Nombre/s" size="15" maxlength="20">
+        <label for="fname" > Apellido Paterno:</label>
+            <input type="text" id="fname" name="apellidopaterno" placeholder=" Apellido Paterno" size="13" maxlength="15">   
+        <label for="fname" >Apellido Materno:</label>
+            <input type="text" id="fname" name="apellidomaterno" placeholder=" Apellido Materno" size="1"4 maxlength="15"><br><br>
+        <label for="fdirec">Direccion:</label>
+            <input type="text" id="fdirec" name="direccion" placeholder="          Maracas #1230">
+        <label for="fcodigo">Codigo Postal:</label>
+            <input type="phone" id="fcodigo" name="codigopostal" placeholder="          Código Postal">
+        <label for="ftel">Telefono:</label>
+            <input type="number" id="ftel" name="telefono" placeholder="      449 192 6809" size="5" maxlength="10"><br><br>
+
+        <label for="fnaci">Fecha de Nacimiento: </label>
+            <input type="date" id="fnaci" name="dia" min="1990-01-01" max="2005-01-01">
+
+        <label for="fciud">Lugar de Nacimiento:</label>
+            <select name="lugarnacimiento">
+
+                <option>Select Option</option>                
+                <option>Aguascalientes</option>
+                <option>Baja California </option>
+                <option>Baja California Sur </option>
+                <option>Campeche </option>
+                <option>Chiapas </option>
+                <option>Chihuahua </option>
+                <option>Coahuila </option>
+                <option>Colima </option>
+                <option>Durango </option>
+                <option>Estado de México </option>
+                <option>Guanajuato </option>
+                <option>Guerrero </option>
+                <option>Hidalgo </option>
+                <option>Jalisco </option>
+                <option>Michoacán </option>
+                <option>Morelos </option>
+                <option>Nayarit </option>
+                <option>Nuevo León </option>
+                <option>Oaxaca </option>
+                <option>Puebla </option>
+                <option>Querétaro </option>
+                <option>Quintana Roo </option>
+                <option>San Luis Potosí </option>
+                <option>Sinaloa </option>
+                <option>Sonora </option>
+                <option>Tabasco </option>
+                <option>Tamaulipas </option>
+                <option>Tlaxcala </option>
+                <option>Veracruz </option>
+                <option>Yucatán </option>
+                <option>Zacatecas</option>
+            </select><br><br>
+    
+
+        <label for="femail">Correo electronico:</label>
+            <input type="email" id="email" name="email" placeholder="   correoelectronico@gmail.com" size="30" maxlength="50"><br><br>
+
+
+    
+        </select>
+        </p>
+    </div>    
+    <div class="form-group col-md-4">
+        <p><label align=right for="beneficios">Estado Civil:</label>
+        <label>
+            <input type="radio" name="estado civil" value="soltera"> Soltero/a
+        </label>
+        <label>
+            <input type="radio" name="estado civil" value="divorciada"> Divorciado/a
+        </label>
+        <label>
+            <input type="radio" name="estado civil" value="viuda"> Viudo/a
+        </label>
+        <label>
+            <input type="radio" name="estado civil" value="casada"> Casado/a
+        </label>
+        <label>
+            <input type="radio" name="estado civil" value="comprometida"> Comprometido/a
+        </label>
+    </center>
+    </div>
+            <h2 style="color:white"> Formación Academica </h2>
+
+            <hr style="color:black"/>
+
+    <br>
+    <center>
+    <div class="form-group col-md-4">
+        <p><label align=right for="estudios">Primaria:</label>
+            <input type="text" class="form-control" name="estudios" id="estudios" maxlength="100" placeholder="Institucion"></p>
+        <p><label align=right for="estudios">De:</label>
+            <input type="date" class="form-control" name="since" id="since" value="00/00/00" min="04/03/1950" max="04/03/2020" ></p>
+        <p><label align=right for="estudios">A:</label>
+            <input type="date" class="form-control" name="since" id="since" value="00/00/00" min="04/03/1950" max="04/03/2020" ></p>
+    </div>
+   <div class="form-group col-md-4">
+        <p><label align=right for="estudios">Secundaria:</label>
+            <input type="text" class="form-control" name="estudios" id="estudios" maxlength="100" placeholder="Institucion"></p>
+        <p><label align=right for="estudios">De:</label>
+            <input type="date" class="form-control" name="since" id="since" value="00/00/00" min="04/03/1950" max="04/03/2020" ></p>
+        <p><label align=right for="estudios">A:</label>
+            <input type="date" class="form-control" name="since" id="since" value="00/00/00" min="04/03/1950" max="04/03/2020" ></p>
+    </div>
+   <div class="form-group col-md-4">
+        <p><label align=right for="estudios">Preparatoria:</label>
+            <input type="text" class="form-control" name="estudios" id="estudios" maxlength="100" placeholder="Institucion"></p>
+        <p><label align=right for="estudios">De:</label>
+            <input type="date" class="form-control" name="since" id="since" value="00/00/00" min="04/03/1950" max="04/03/2020" ></p>
+        <p><label align=right for="estudios">A:</label>
+            <input type="date" class="form-control" name="since" id="since" value="00/00/00" min="04/03/1950" max="04/03/2020" ></p>
+    </div>
+   <div class="form-group col-md-4">
+        <p><label align=right for="estudios">Universidad:</label>
+            <input type="text" class="form-control" name="estudios" id="estudios" maxlength="100" placeholder="Institucion"></p>
+        <p><label align=right for="estudios">De:</label>
+            <input type="date" class="form-control" name="since" id="since" value="00/00/00" min="04/03/1950" max="04/03/2020" ></p>
+        <p><label align=right for="estudios">A:</label>
+            <input type="date" class="form-control" name="since" id="since" value="00/00/00" min="04/03/1950" max="04/03/2020" ></p>
+    </div>
+
+          <h2 style="color:white"> Habilidades </h2>
+
+            <hr style="color:black"/>
+
+    <br>
+
+    <div class="form-group col-md-4">
+        <p><label align=right for="Habilidad">Habilidad/es:</label>
+        <input type="text" class="form-control" name="Habilidad" id="Habilidad" maxlength="50" placeholder="Describe la Habilidad"></p> 
+        <label>
+            <input type="radio" name="estado civil" value="soltera"> Muy bueno/a
+        </label>
+        <label>
+            <input type="radio" name="estado civil" value="divorciada"> Bueno/a
+        </label>
+        <label>
+            <input type="radio" name="estado civil" value="viuda"> Regular
+        </label>
+    </div>
+
+      <h2 style="color:white"> Idiomas </h2>
+
+            <hr style="color:black"/>
+
+    <br>
+
+    <div class="form-group col-md-4">
+        <p><label align=right for="Habilidad">Idioma/s:</label>
+            <br>
+        <input type="checkbox" class="form-control" name="Habilidad" id="Habilidad"> Ingles
+
+        <label>
+            <input type="radio" name="estado civil" value="soltera"> Alto
+        </label>
+        <label>
+            <input type="radio" name="estado civil" value="divorciada"> Medio
+        </label>
+        <label>
+            <input type="radio" name="estado civil" value="viuda"> Bajo
+        </label>      
+
+        <br>
+
+        <input type="checkbox" class="form-control" name="Habilidad" id="Habilidad"> Frances
+        <label>
+            <input type="radio" name="estado civil" value="soltera"> Alto
+        </label>
+        <label>
+            <input type="radio" name="estado civil" value="divorciada"> Medio
+        </label>
+        <label>
+            <input type="radio" name="estado civil" value="viuda"> Bajo
+        </label>                     
+
+                <br>
+        <input type="checkbox" class="form-control" name="Habilidad" id="Habilidad"> Portugues
+        <label>
+            <input type="radio" name="estado civil" value="soltera"> Alto
+        </label>
+        <label>
+            <input type="radio" name="estado civil" value="divorciada"> Medio
+        </label>
+        <label>
+            <input type="radio" name="estado civil" value="viuda"> Bajo
+        </label>      
+                
+                <br>
+
+        <input type="checkbox" class="form-control" name="Habilidad" id="Habilidad"> Aleman
+        <label>
+            <input type="radio" name="estado civil" value="soltera"> Alto
+        </label>
+        <label>
+            <input type="radio" name="estado civil" value="divorciada"> Medio
+        </label>
+        <label>
+            <input type="radio" name="estado civil" value="viuda"> Bajo
+        </label>      
+                <br>
+        <input type="checkbox" class="form-control" name="Habilidad" id="Habilidad"> Español
+        <label>
+            <input type="radio" name="estado civil" value="soltera"> Alto
+        </label>
+        <label>
+            <input type="radio" name="estado civil" value="divorciada"> Medio
+        </label>
+        <label>
+            <input type="radio" name="estado civil" value="viuda"> Bajo
+        </label>      
+                <br>
+                
+                
+
+
+            </p> 
+            <hr>
+            <br>
+            <center>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                <input type="reset"  class="btn btn-primary"  align="center" value="Cancelar">
+            </center>   
+    </center>      
+</body>
+</html>
